@@ -1,0 +1,87 @@
+.LeyendasRP {
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    bottom: 0;
+    color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+
+    &-logo {
+        display: flex;
+        justify-content: center;
+        &-img {
+            height: auto;
+            width: 400px;
+
+            @media only screen and (max-width: 600px) {
+                width: 300px;
+            }
+        }
+    }
+
+    &-menu {
+        display: flex;
+        font-size: 40px;
+        justify-content: center;
+        padding-top: 10px;
+
+        @media only screen and (max-width: 600px) {
+            font-size: 20px;
+        }
+    }
+
+    &-separator {
+        padding: 0 20px;
+    }
+
+    &-content {
+        align-items: center;
+        background: rgba(0, 0, 0, 0.5);
+        display: flex;
+        height: inherit;
+        padding: 20px 40px;
+        width: 410px;
+
+        @media only screen and (max-width: 600px) {
+            width: 300px;
+        }
+    }
+
+    &-store{
+        text-decoration: line-through;
+    }
+
+    &-rules {
+        display: flex;
+        flex-direction: column;
+        font-size: 40px;
+        justify-content: center;
+        padding-top: 10px;
+
+        @media only screen and (max-width: 600px) {
+            font-size: 20px;
+        }
+
+        li {
+            list-style: none;
+        }
+    }
+}
+
+ /* Style the video: 100% width and height to cover the entire window */
+ #myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+  
+
+  a:hover {
+      color: yellow;
+  }
