@@ -4,7 +4,7 @@
 </video>
 <div class="LeyendasRP">
   <div class="LeyendasRP-content">
-    <div *ngIf="inicio" [@enterAnimation]>
+    <div *ngIf="inicio">
       <div class="LeyendasRP-logo">
         <img class="LeyendasRP-logo-img" src="/assets/logo.png">
       </div>
@@ -12,32 +12,35 @@
         <a>
           <p (click)="showInfo('rules')">Reglas</p>
         </a>
-        <p class="LeyendasRP-separator">●</p>
+        <p class="LeyendasRP-separator">|</p>
         <p class="LeyendasRP-store">Tienda</p>
-        <p class="LeyendasRP-separator">●</p>
+        <p class="LeyendasRP-separator">|</p>
         <a>
           <p (click)="showInfo('staff')">Staff</p>
         </a>
       </div>
     </div>
-    <div *ngIf="rules" [@enterAnimation]>
+    <div *ngIf="rules">
       <div class="LeyendasRP-rules">
         <h1>Reglas</h1>
         <ul>
           <a (click)="goToLink('https://bit.ly/NormativaGeneral-LeyendasRP')">
-            <li>Normas Ciudadanas</li>
+            <li>Reglamento Ciudadanas</li>
           </a>
           <a (click)="goToLink('https://bit.ly/NormativaLSPD-LeyendasRP')">
-            <li>Normas LSPD</li>
+            <li>Reglamento LSPD</li>
           </a>
           <a (click)="goToLink('https://bit.ly/NormativaEMSS-LeyendasRP')">
-            <li>Normas EMS</li>
+            <li>Reglamento EMS</li>
+          </a>
+          <a (click)="goToLink('https://docs.google.com/document/d/1_4_fxEF48HRMDifQ8xCXAi_A-BGwfnguEfxXlEs3vrY/edit#')">
+            <li>Reglamento Atracos</li>
           </a>
         </ul>
         <a (click)="showInfo('inicio')">Volver</a>
       </div>
     </div>
-    <div *ngIf="staff" [@enterAnimation]>
+    <div *ngIf="staff">
       <div class="LeyendasRP-rules">
         <h1>Staff</h1>
         <ul>
@@ -45,6 +48,12 @@
             <li>Ekinox: Fundador</li>
             <li>Richard: Developer</li>
             <li>Lupesparza: Developer</li>
+            <li>Papusho: Developer</li>
+            <li>Crissale: Administrador</li>
+            <li>Davidlbnz: Administrador</li>
+            <li>Niicoo_13: Administrador</li>
+            <li>Ancho Saveedra: Administrador</li>
+            <li>Costeño: Administrador</li>
         </ul>
         <a (click)="showInfo('inicio')">Volver</a>
       </div>
